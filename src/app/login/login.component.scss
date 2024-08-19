@@ -1,0 +1,29 @@
+.absolute {
+    position: absolute;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.sign-in-container {
+    width: 100%;
+    @media (min-width: 768px) {
+        width: 25%;
+    }
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding: 3rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 9rem auto;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.sign-in-title {
+    font-weight: bold;
+    font-size: 1.875rem; /* 3xl */
+    padding: 1rem 0;
+}
