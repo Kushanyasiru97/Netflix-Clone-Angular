@@ -1,1 +1,46 @@
-<p>browse works!</p>
+<div class="h-screen dark:bg-gray-700 bg-gray-200 pt-12">
+    <!-- Card start -->
+    <div class="card-container">
+        <div class="card-header">
+            <div class="text-center my-4">
+                <img class="profile-img"
+                    [src]="userProfileImg" alt="">
+                <div class="py-2">
+                    <h3 class="profile-name">{{name}}</h3>
+                    <div class="row">
+                        <div class="location">
+                            <svg class="location-icon" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M5.64 16.36a9 9 0 1 1 12.72 0l-5.65 5.66a1 1 0 0 1-1.42 0l-5.65-5.66zm11.31-1.41a7 7 0 1 0-9.9 0L12 19.9l4.95-4.95zM12 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                            </svg>
+                            {{email}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="location">
+                            <svg class="location-icon" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M5.64 16.36a9 9 0 1 1 12.72 0l-5.65 5.66a1 1 0 0 1-1.42 0l-5.65-5.66zm11.31-1.41a7 7 0 1 0-9.9 0L12 19.9l4.95-4.95zM12 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                            </svg>
+                            New York, NY
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="location">
+                            <svg class="location-icon" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M5.64 16.36a9 9 0 1 1 12.72 0l-5.65 5.66a1 1 0 0 1-1.42 0l-5.65-5.66zm11.31-1.41a7 7 0 1 0-9.9 0L12 19.9l4.95-4.95zM12 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                            </svg>
+                            New York, NY
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2 px-2">
+                <button class="follow-btn" (click)="signOut()">Log Out</button>
+                <button class="message-btn">Message</button>
+            </div>
+        </div>
+    </div>
+    <!-- Card end -->
+</div>
