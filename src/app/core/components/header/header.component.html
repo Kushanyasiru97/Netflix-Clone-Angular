@@ -1,0 +1,19 @@
+<header class="header-container">
+    <!-- Logo + nav items -->
+    <div class="nav-items">
+      <img width="110" src="/assets/pngwing.com.png" alt="netflix-logo">
+      <ul class="nav-list" *ngFor="let item of navList">
+        <li>{{item}}</li>
+      </ul>
+    </div>
+    <!-- Welcome User | Profile Img | Signout -->
+    <div class="user-info">
+      <div class="welcome-user">
+        <a href="/"><span>Welcome  <strong>{{username}}</strong></span></a>
+        <img [src]="userImg" width="42" alt="user-img">
+      </div>
+      &nbsp; | &nbsp;
+      <a>Signout</a>
+    </div>
+  </header>
+  

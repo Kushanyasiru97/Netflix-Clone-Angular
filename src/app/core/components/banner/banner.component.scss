@@ -1,0 +1,32 @@
+.video-frame {
+    @apply w-full h-full absolute;
+  }
+  
+  .banner-container {
+    @apply h-screen bg-white;
+  }
+  
+  .banner-content {
+    @apply pt-[15%] px-24 absolute h-full text-white bg-gradient-to-r from-black;
+  }
+  
+  .banner-title {
+    @apply text-6xl font-bold;
+  }
+  
+  .banner-overview {
+    @apply inline-block py-6 text-xl w-1/4 flex-wrap;
+  }
+  
+  .button-group {
+    // Additional styling for the button group can go here
+  }
+  
+  .play-button {
+    @apply bg-white text-black py-4 px-12 text-xl rounded-lg hover:bg-opacity-70 transition-[1s];
+  }
+  
+  .info-button {
+    @apply mx-2 bg-gray-500 text-white px-12 py-4 text-xl bg-opacity-50 rounded-lg;
+  }
+  
