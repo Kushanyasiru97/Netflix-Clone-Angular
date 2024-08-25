@@ -9,6 +9,8 @@ import { HeaderComponent } from './core/components/header/header.component';
 import { BannerComponent } from './core/components/banner/banner.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MovieCarouselComponent } from './shared/components/movie-carousel/movie-carousel.component';
+import { DescriptionPipe } from './shared/pipes/description.pipe';
+import { ImagePipe } from './shared/pipes/image.pipe';
 
 @NgModule({
   declarations: [
@@ -22,8 +24,10 @@ import { MovieCarouselComponent } from './shared/components/movie-carousel/movie
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
-  ],
+    HttpClientModule,
+    DescriptionPipe,
+    ImagePipe
+],
   providers: [],
   bootstrap: [AppComponent]
 })

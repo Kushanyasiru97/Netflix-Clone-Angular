@@ -23,15 +23,14 @@ export class MovieService {
   http = inject(HttpClient);
 
   getMovies() {
-    return this.http.get<any>('https://api.themoviedb.org/3/discover/movie', options)
+    return this.http.get<any>('https://api.themoviedb.org/3/discover/movie', options);
   }
-
   getTvShows() {
     return this.http.get('https://api.themoviedb.org/3/discover/tv', options)
   }
 
   getRatedMovies() {
-    return this.http.get('https://api.themoviedb.org/3/guest_session/guest_session_id/rated/movies', options)
+    return this.http.get('https://api.themoviedb.org/3/account/21263192/rated/movies', options)
   }
 
   getBannerImage(id: number) {
